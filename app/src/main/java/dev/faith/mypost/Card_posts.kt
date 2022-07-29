@@ -23,9 +23,13 @@ class Card_posts (var post: List<Post>):RecyclerView.Adapter<PostViewHolder>(){
 class PostViewHolder(itemView:View):RecyclerView.ViewHolder(itemView){
     private var tvtitle:TextView=itemView.findViewById(R.id.tvtitle)
     private var tvbody:TextView=itemView.findViewById(R.id.tvbody)
+    private var tvId: TextView=itemView.findViewById(R.id.tvId)
+    private var tvUserId: TextView=itemView.findViewById(R.id.tvUserId)
 
     fun bindView(post: Post){
         tvtitle.text=post.title
         tvbody.text=post.body
+        tvUserId.text=post.userId.toString()
+        tvId.text=post.userId.toString()
     }
 }
