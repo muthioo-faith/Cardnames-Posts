@@ -9,6 +9,7 @@ data class Post(
 )
 data class Comment(
     var postId:Int,
+    var title: String,
     var id:Int,
     var name:String,
     var email:String,
